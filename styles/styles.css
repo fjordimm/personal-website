@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root
+{
+	--beige-main: #D8C1B4;
+	--beige-darker: #AB988F;
+
+	--font-sans-serif: 'Mukta', sans-serif;
+	--font-serif: 'Gentium Book Plus', serif;
+}
+
+html, body
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.main-div
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	background-position: center;
+	background-image: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+p
+{
+	margin: 0;
+}
