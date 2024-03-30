@@ -24,13 +24,37 @@ html, body
 	margin: 0;
 	padding: 0;
 
-	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.navbar
+{
+	flex-grow: 0;
+	flex-shrink: 0;
+
+	height: 50px;
+	margin: 0;
+	padding: 0;
+
+	background-color: darksalmon;
+}
+
+.content-div
+{
+	flex-grow: 1;
+
+	margin: 0;
+	padding: 0;
+
 	background-image: no-repeat;
 	background-size: cover;
 	background-position: top;
+	background-attachment: fixed;
 }
 
-p
+p, h1
 {
 	margin: 0;
 }
