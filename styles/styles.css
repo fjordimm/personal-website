@@ -18,6 +18,7 @@
 	--navbar-font-size: 24px;
 
 	--small-gap: 9px;
+	--page-side-gap: 27px;
 }
 
 html, body
@@ -84,6 +85,7 @@ a
 {
 	justify-content: flex-start;
 	align-items: center;
+	margin-left: var(--page-side-gap);
 }
 
 .logo-link
@@ -110,6 +112,7 @@ a
 {
 	margin: 0;
 	padding: 0;
+	margin-bottom: -5px;
 
 	font-family: var(--font-sans-serif);
 	font-weight: 800;
@@ -120,6 +123,7 @@ a
 .navbar-right
 {
 	justify-content: flex-end;
+	margin-right: var(--page-side-gap);
 }
 
 .navbar-right > a
@@ -161,8 +165,8 @@ a
 	flex-wrap: nowrap;
 	justify-content: center;
 
-	padding-left: 180px;
-	padding-right: 180px;
+	padding-left: 171px;
+	padding-right: 171px;
 }
 
 .content-inner
