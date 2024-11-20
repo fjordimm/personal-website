@@ -23,9 +23,11 @@
 
 html, body
 {
-	height: 100%;
+	/* height: 100%; */
 	margin: 0;
 	padding: 0;
+
+	/* overflow: hidden; */
 }
 
 a
@@ -36,11 +38,13 @@ a
 
 .main-div
 {
-	height: 100%;
+	/* height: 100%; */
+	max-height: 100vh;
+	min-height: 100vh;
 	margin: 0;
 	padding: 0;
 
-	overflow: hidden;
+	/* overflow: hidden; */
 
 	background-color: var(--beige-darker);
 	background-image: no-repeat;
@@ -60,6 +64,9 @@ a
 
 	margin: 0;
 	padding: 0;
+
+	/* position: sticky;
+	top: 0; */
 
 	background-color: var(--beige-darker);
 
@@ -167,12 +174,12 @@ a
 	padding-left: 171px;
 	padding-right: 171px;
 
-	box-shadow: inset 0 var(--div-shadow-size) var(--div-shadow-size) calc(-1 * var(--div-shadow-size)) var(--div-shadow-color);
 	overflow: hidden;
+
+	box-shadow: inset 0 var(--div-shadow-size) var(--div-shadow-size) calc(-1 * var(--div-shadow-size)) var(--div-shadow-color);
 
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: center;
 }
 
@@ -181,9 +188,11 @@ a
 	flex-grow: 1;
 	min-width: 600px;
 
-	height: 100%;
+	/* height: 100%; */
 	margin: 0;
 	padding: 0;
+
+	/* overflow: hidden; */
 
 	display: flex;
 	justify-content: center;
@@ -201,6 +210,11 @@ a
 	max-width: calc(100vw - 4 * var(--small-gap));
 	margin: var(--small-gap);
 	padding: var(--small-gap);
+
+	/* height: 100%;
+	overflow-y: scroll; */
+	/* max-height: 50px; */
+	overflow-y: auto;
 
 	background-color: green;
 }
