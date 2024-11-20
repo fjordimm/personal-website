@@ -26,9 +26,14 @@
     background-color: transparent;
 }
 
+::-webkit-scrollbar-track {
+	margin-block: var(--small-gap);
+}
+
 ::-webkit-scrollbar-thumb {
     background-color: #00000030;
     border-radius: var(--small-gap);
+	/* border: 1px transparent solid; */
     background-clip: padding-box;
 }
 
@@ -207,7 +212,7 @@ a
 	flex-grow: 1;
 
 	max-width: calc(100vw - 4 * var(--small-gap));
-	margin: var(--small-gap);
+	margin: 0 var(--small-gap) 0 var(--small-gap);
 	padding: var(--small-gap);
 
 	overflow-y: auto;
