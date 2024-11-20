@@ -34,11 +34,8 @@
 
 html, body
 {
-	/* height: 100%; */
 	margin: 0;
 	padding: 0;
-
-	/* overflow: hidden; */
 }
 
 a
@@ -49,13 +46,10 @@ a
 
 .main-div
 {
-	/* height: 100%; */
 	max-height: 100vh;
 	min-height: 100vh;
 	margin: 0;
 	padding: 0;
-
-	/* overflow: hidden; */
 
 	background-color: var(--beige-darker);
 	background-image: no-repeat;
@@ -75,9 +69,6 @@ a
 
 	margin: 0;
 	padding: 0;
-
-	/* position: sticky;
-	top: 0; */
 
 	background-color: var(--beige-darker);
 
@@ -199,11 +190,8 @@ a
 	flex-grow: 1;
 	min-width: 600px;
 
-	/* height: 100%; */
 	margin: 0;
 	padding: 0;
-
-	/* overflow: hidden; */
 
 	display: flex;
 	justify-content: center;
@@ -222,9 +210,6 @@ a
 	margin: var(--small-gap);
 	padding: var(--small-gap);
 
-	/* height: 100%;
-	overflow-y: scroll; */
-	/* max-height: 50px; */
 	overflow-y: auto;
 
 	background-color: transparent;
