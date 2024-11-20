@@ -21,6 +21,17 @@
 	--page-side-gap: 27px;
 }
 
+::-webkit-scrollbar {
+    width: var(--small-gap);
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00000030;
+    border-radius: var(--small-gap);
+    background-clip: padding-box;
+}
+
 html, body
 {
 	/* height: 100%; */
@@ -216,7 +227,7 @@ a
 	/* max-height: 50px; */
 	overflow-y: auto;
 
-	background-color: green;
+	background-color: transparent;
 }
 
 p, h1
