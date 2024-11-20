@@ -1,11 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root
 {
 	--beige-main: #D8C1B4;
 	--beige-darker: #AB988F;
+	--beige-darker2: #75675f;
 	--purple: #291F26;
 	--content-inner-overlay: #291F2690;
 
@@ -13,7 +14,7 @@
 	--div-shadow-size: 30px;
 
 	--font-sans-serif: 'Mukta', sans-serif;
-	--font-serif: 'Gentium Book Plus', serif;
+	--font-serif: 'Aleo', serif;
 
 	--navbar-font-size: 24px;
 
@@ -33,7 +34,6 @@
 ::-webkit-scrollbar-thumb {
     background-color: #00000030;
     border-radius: var(--small-gap);
-	/* border: 1px transparent solid; */
     background-clip: padding-box;
 }
 
@@ -233,11 +233,25 @@ a
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: left;
+	gap: var(--small-gap);
 
 	background-color: transparent;
 }
 
+.left-aligned {
+	align-items: left;
+}
+
 .center-aligned {
+	align-items: center;
+}
+
+.right-aligned {
+	align-items: right;
+}
+
+.horiz-div {
+	flex-direction: row;
 	align-items: center;
 }
 
@@ -245,11 +259,60 @@ a
 	height: calc(3 * var(--page-side-gap));
 }
 
-p, h1
+p, h1, h2, h3, h4, h5, h6
 {
 	margin: 0;
+
+	font-family: var(--font-serif);
+	color: var(--purple);
+	font-weight: 500;
+	font-size: 18px;
+}
+
+p {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 50px;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 36px;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 28px;
+}
+
+h4 {
+	font-weight: 700;
+	font-size: 22px;
 }
 
 .photo-of-me {
 	border-radius: 100%;
+}
+
+.circle-button {
+	width: 42px;
+	height: 42px;
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 100%;
+
+	background-color: var(--beige-main);
+}
+
+.circle-button > svg {
+	fill: var(--purple);
 }
