@@ -357,9 +357,6 @@ h4 {
 	margin: 0;
 	padding: 0;
 
-	/* width: 300px;
-	height: 225px; */
-
 	border-radius: 20px;
 	overflow: hidden;
 }
@@ -381,5 +378,5 @@ h4 {
 	font-family: var(--font-sans-serif);
 	color: var(--purple);
 	font-weight: 800;
-	font-size: 18px;
+	font-size: 16px;
 }
