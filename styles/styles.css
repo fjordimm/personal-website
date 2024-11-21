@@ -306,6 +306,13 @@ h4 {
 	text-decoration: underline;
 }
 
+.text-button {
+	padding: 0 8px 0 8px;
+	border-radius: 1000px;
+	background-color: var(--beige-darker);
+	color: var(--purple);
+}
+
 .photo-of-me {
 	border-radius: 100%;
 }
@@ -339,18 +346,17 @@ h4 {
 	align-items: flex-start;
 	flex-wrap: wrap;
 	gap: var(--small-gap);
-
-	background-color: coral;
 }
 
 .project-div {
 	margin: 0;
-	padding: var(--small-gap);
+	padding: 0;
 
-	width: 300px;
-	height: 225px;
+	/* width: 300px;
+	height: 225px; */
 
-	background-color: aqua;
+	border-radius: 20px;
+	overflow: hidden;
 }
 
 .project-title-div {
@@ -360,4 +366,15 @@ h4 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	background-color: var(--beige-darker);
+}
+
+.project-title-div > span {
+	margin: 0;
+
+	font-family: var(--font-sans-serif);
+	color: var(--purple);
+	font-weight: 800;
+	font-size: 18px;
 }
