@@ -9,9 +9,9 @@
 	--beige-darker2: #75675f;
 	--purple: #291F26;
 	--content-inner-overlay: #291F2690;
-
 	--div-shadow-color: #00000088;
 	--div-shadow-size: 30px;
+	--very-light-shadow: #00000030;
 
 	--font-sans-serif: 'Mukta', sans-serif;
 	--font-serif: 'Aleo', serif;
@@ -172,6 +172,10 @@ a
 	font-size: var(--navbar-font-size);
 }
 
+.page-link-selected {
+	box-shadow: 0 0 0 4px var(--very-light-shadow);
+}
+
 .main-section
 {
 	flex-grow: 1;
@@ -323,4 +327,37 @@ h4 {
 
 .circle-button > svg {
 	fill: var(--purple);
+}
+
+.projects-container {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: var(--small-gap);
+
+	background-color: coral;
+}
+
+.project-div {
+	margin: 0;
+	padding: var(--small-gap);
+
+	width: 300px;
+	height: 225px;
+
+	background-color: aqua;
+}
+
+.project-title-div {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
