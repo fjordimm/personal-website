@@ -259,6 +259,11 @@ a
 	align-items: center;
 }
 
+.space-betweened {
+	justify-content: space-between;
+	height: 100%;
+}
+
 .vspace-big {
 	height: calc(3 * var(--page-side-gap));
 }
@@ -309,7 +314,7 @@ h4 {
 .text-button {
 	padding: 0 8px 0 8px;
 	border-radius: 1000px;
-	background-color: var(--beige-darker);
+	background-color: var(--beige-main);
 	color: var(--purple);
 }
 
