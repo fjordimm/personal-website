@@ -264,7 +264,27 @@ a
 	height: 100%;
 }
 
+.vspace-tiny {
+	margin: 0;
+	padding: 0;
+	height: var(--small-gap);
+}
+
+.vspace-small {
+	margin: 0;
+	padding: 0;
+	height: calc(2 * var(--small-gap));
+}
+
+.vspace-medium {
+	margin: 0;
+	padding: 0;
+	height: calc(3 * var(--small-gap));
+}
+
 .vspace-big {
+	margin: 0;
+	padding: 0;
 	height: calc(3 * var(--page-side-gap));
 }
 
@@ -305,6 +325,16 @@ h4 {
 
 .text-bold {
 	font-weight: 600;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.text-superscript {
+	vertical-align: super;
+	font-size: 50%;
+	font-weight: 760;
 }
 
 .text-link {
@@ -356,6 +386,9 @@ h4 {
 .project-div {
 	margin: 0;
 	padding: 0;
+
+	display: flex;
+	flex-direction: column;
 
 	border-radius: 20px;
 	overflow: hidden;
